@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>JS demo</title>
 </head>
 <body>
-$END$
+<h1>A web page</h1>
+<p id="demo">A paragraph</p>
+<button type="button"onclick="myFunction()">Try it</button>
+<script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+</script>
+
+<input type="submit" value="Try it">
+<input type="submit" value="Duyen Xinh">
+<form action="http://www.google.com"method="post">
+    Ho va ten :<br>
+    <input type="text">
+</form>
 </body>
 </html>
