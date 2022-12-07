@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xep loai hoc luc hoc sinh</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập điểm kiểm tra vào đây :");
+    let b = +prompt("Nhập điểm thi giữa kì vào đây :");
+    let c = +prompt("Nhập điểm thi cuối kì vào đây :");
+    let result = (a + b * 2 + c * 3) / 6;
+    if (result >= 8) {
+        alert("Đạt danh hiệu học sinh giỏi ");
+    } else if (result < 8 && result >= 6.5) {
+        alert("Đạt danh hiệu học sinh khá");
+    } else if (result > 4.9 && result <= 6.4) {
+        alert("Đạt danh hiệu học sinh trung bình");
+    }else if (result <= 4.9){
+            alert("Đạt học sinh yếu");
+        }
+</script>
+
+</body>
+</html>
