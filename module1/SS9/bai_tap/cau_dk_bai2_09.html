@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập giá trị của a vào ");
+    let b = +prompt("Nhập giá trị của b vào ");
+    let c = +prompt("Nhập giá trị của c vào ");
+    if (a > 0 && b > 0 && c > 0) {
+        if ((a + b > c) || (b + c > a) || (a + c > b)) {
+            alert("Là giá trị các cạnh của tam giác");
+        }
+    } else {
+        alert("Nhập sai giá trị , vui lòng nhập lại.");
+    }
+</script>
+</body>
+</html>

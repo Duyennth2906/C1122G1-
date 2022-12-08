@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi suất kép ngân hàng</title>
+</head>
+<body>
+<script>
+    let P= +prompt("Nhập số đầu tư ban đầu: ");
+    let r= +prompt("Nhập lãi suất kép: ");
+    let n= +prompt("Nhập số chu kì lãi suất kép");
+    let A;
+    if (P>0 && n>0) {
+        A =P*(1+r)^n ;
+        document.write("Lãi suất kép là : " +A);
+    }else if(P<=0 && n<=0){
+        alert("Nhập sai giá trị ,vui lòng nhập lại");
+    }
+</script>
+</body>
+</html>
