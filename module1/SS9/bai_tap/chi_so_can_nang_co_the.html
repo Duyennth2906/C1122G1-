@@ -15,23 +15,25 @@
         <td>Nhập chiều cao:(m)</td>
         <td><input type="number" id="height"></td>
     </tr>
-    <td><button onclick="test()">Kiem tra</button></td>
+    <td>
+        <button onclick="test()">Kiem tra</button>
+    </td>
 </table>
 <div id="result"></div>
 <script>
     function test() {
         let weight = +document.getElementById("weight").value;
         let height = +document.getElementById("height").value;
-        let result =weight/(height*height);
-        if (result<18)
+        let result = weight / (height * height);
+        if (result < 18)
             document.write("underweigh");
-         else if (result < 25.0)
+        else if (result < 25.0)
             document.write("normal");
-         else if (result< 30.0)
+        else if (result < 30.0)
             document.write("overweigh");
         else
             document.write("obese");
-    document.getElementById("result").innerHTML = result;
+        document.getElementById("result").innerHTML = result;
     }
 </script>
 </body>

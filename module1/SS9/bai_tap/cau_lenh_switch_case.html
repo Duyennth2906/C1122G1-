@@ -8,45 +8,48 @@
 <h1>Kiểm tra số ngày trong tháng</h1>
 <table>
     <tr>
-        <td><input type="number"placeholder="Nhập tháng vào đây" id="month"></td>
-        <td><button onclick="demo()">Check</button></td>
+        <td><input type="number" placeholder="Nhập tháng vào đây" id="month"></td>
+        <td>
+            <button onclick="demo()">Check</button>
+        </td>
     </tr>
 </table>
-<h4>  Đây là chỗ hiển thị kết quả :</h4>
+<h4> Đây là chỗ hiển thị kết quả :</h4>
 <div id="result"></div>
 <script>
     function demo() {
-        let month =+document.getElementById("month").value;
-        let result="";
-        if (month>=1 && month<=12) {
-        switch(month){
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 8:
-            case 10:
-            case 12:
-                 result="tháng này có 31 ngày";
-                document.getElementById("month").innerHTML = result;
-                break;
+        let month = +document.getElementById("month").value;
+        let result = "";
+        if (month >= 1 && month <= 12) {
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    result = "tháng này có 31 ngày";
+                    document.getElementById("month").innerHTML = result;
+                    break;
                 case 2:
-                   result="tháng này có 28 hoặc 29 ngày";
-                    document.getElementById("month").innerHTML=result;
+                    result = "tháng này có 28 hoặc 29 ngày";
+                    document.getElementById("month").innerHTML = result;
 
-                break;
-            case 4:
-            case 6:
-            case 9:
-            case 11:
-                result="tháng này có 30 ngày";
-                document.getElementById("month").innerHTML=result;
-                break;
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    result = "tháng này có 30 ngày";
+                    document.getElementById("month").innerHTML = result;
+                    break;
                 default:
-                result="nhập sai giá trị của tháng, vui lòng nhập lại "
+                    result = "nhập sai giá trị của tháng, vui lòng nhập lại "
+            }
+            document.getElementById("result").innerHTML = result;
+        }
     }
-    document.getElementById("result").innerHTML=result;
-        } }
 </script>
 </body>
 </html>
