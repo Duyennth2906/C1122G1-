@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let numb = [];
+    for (let i = 0; i < 10; i++) {
+        numb[i] = +prompt("nhập số cần kiểm tra vào đây : " );
+    }
+    let max = numb[0];
+    for (let i = 0; i < numb.length; i++) {
+        if (numb[i] > max) {
+            max = numb[i];
+        }
+    }
+    document.write(max);
+</script>
 </body>
 </html>

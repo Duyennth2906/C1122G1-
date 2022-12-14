@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let id = false;
+    for (let i = 0; i < 10; i++) {
+        arr[i] = parseInt(prompt('Giá trị phần tử thứ ' + (i + 1) + 'vào đây :'));
+    }
+    let numb = parseInt(prompt('Nhập số V bạn cần tìm trong mảng vào đây'));
+    for (let i = 0; i < 10; i++) {
+        if ( numb === arr[i]) {
+            id = true;
+            break;
+        } else {
+            id = false;
+        }
+    }
+    if (id) {
+        alert('V nằm trong mảng');
+    } else {
+        alert('V không nằm trong mảng');
+    }
+</script>
+</body>
+</html>

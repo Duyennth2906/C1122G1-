@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số nguyên âm trong 1 chuỗi</title>
+</head>
+<body>
+<script>
+    let str = prompt('Nhập vào đây chuỗi bạn cần tìm số nguyên âm');
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === '-') {
+            if (!isNaN(str[i + 1])) {
+                count++;
+            }
+        }
+    }
+    alert("Có " + count + " số nguyên âm trong chuỗi trên ");
+</script>
+</body>
+</html>
