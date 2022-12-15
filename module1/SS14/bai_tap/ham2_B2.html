@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chu vi dien tich hinh tron</title>
+</head>
+<body>
+<script>
+    let numb = +prompt("Vui lòng nhập bán kính hình tròn vào đây : ");
+    alert("chu vi hinh tron la " + tinhChuVi(numb));
+    alert("dien tich hinh tron la " + tinhDIenTich(numb));
+
+    function tinhDIenTich(r) {
+        return r * r * 3.14;
+    }
+
+    function tinhChuVi(r) {
+        return 2 * r * 3.14;
+    }
+</script>
+</body>
+</html>

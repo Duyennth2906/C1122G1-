@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ngôi sao</title>
+</head>
+<body>
+<script>
+    let star1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let star2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+    function findStar(star) {
+        for (let i = 0; i < star1.length; i++) {
+            if (star === star1[i]) {
+                return star2[i];
+            }
+        }
+        return "Khong tim ra ten ngoi sao";
+    }
+
+    let star = prompt("nhap ten ngoi sao :");
+    alert(findStar(star));
+</script>
+</body>
+</html>
