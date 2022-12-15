@@ -9,16 +9,10 @@
     let x = prompt("nhap tu can dich vao day");
     let tiengViet = ['tao', 'chuoi', 'cam'];
     let tiengAnh = ['apple', 'banana', 'orange'];
-    let numb;
     for (let i = 0; i < tiengViet.length; i++) {
         if (x === tiengViet[i]) {
-            numb = i;
-            for (let j = 0; j < tiengAnh.length; j++) {
-                if (j == numb) {
-                    document.write(tiengAnh[j])
-                    break;
-                }
-            }
+            document.write(tiengAnh[i]);
+            break;
         }
     }
 </script>
