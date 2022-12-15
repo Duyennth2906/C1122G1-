@@ -6,22 +6,22 @@
 </head>
 <body>
 <script>
-    let a= prompt('Nhập mảng thứ 1 vào đây : ');
-    let b= prompt('Nhập mảng thứ 2 vào đây : ');
+    let a = prompt('Nhập mảng thứ 1 vào đây : ');
+    let b = prompt('Nhập mảng thứ 2 vào đây : ');
     let arr1 = a.split(' ');
     let arr2 = b.split(' ');
     let check = true;
-    if (arr1.length === arr2.length){
-        for (let i =0; i<arr1.length;i++){
-            if (arr1[i] === arr2[i]){
+    if (arr1.length === arr2.length) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] === arr2[i]) {
                 check = true;
-            }else {
+            } else {
                 document.write('Hai mảng vừa nhập khác nhau');
                 check = false;
                 break;
             }
         }
-        if (check){
+        if (check) {
             document.write('Hai mảng vừa nhập giống nhau');
         }
     }
