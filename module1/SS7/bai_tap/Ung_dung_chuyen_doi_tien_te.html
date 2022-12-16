@@ -28,6 +28,7 @@
         <td><input type="submit" value="Convert" onclick="demo()"></td>
     </tr>
 </table>
+<h1>Result</h1>
 <div id="result"></div>
 <script>
     function demo() {
@@ -35,16 +36,16 @@
         let from = document.getElementById("from").value;
         let to = document.getElementById("to").value;
         let result;
-        if (from == "USD" && to == "VND") {
+        if (from === "USD" && to === "VND") {
             result = money * 23000;
-        } else if (from == "VND" && to == "USD") {
+        } else if (from === "VND" && to === "USD") {
             result = money / 23000;
-        } else if (from == "USD" && to == "USD") {
+        } else if (from === "USD" && to === "USD") {
             result = money;
         } else {
             result = money;
         }
-        document.getElementById("result").innerHTML = result;
+        document.getElementById("result").innerHTML = "Tiền nè anh Trung " +result;
     }
 </script>
 </body>
