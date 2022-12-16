@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim gia tri nho nhat</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập giá trị thứ nhất ");
+    let b = +prompt("nhập giá trị thứ hai ");
+    let c = +prompt("nhập giá trị thứ ba ");
+    let arr = [a, b, c];
+    alert("Giá trị bé nhất là " + timGiaTriNhoNhat(a, b, c));
+
+    function timGiaTriNhoNhat(a, b, c) {
+        let min = arr[0];
+        for (let i = 0; i <3; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+</script>
+</body>
+</html>

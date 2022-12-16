@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh giai thua</title>
+</head>
+<body>
+<script>
+    let numb = +prompt("nhập số cần tính giai thừa vào đây : ");
+    alert(tinhGiaiThua(numb));
+
+    function tinhGiaiThua(numb) {
+        let result = 1;
+        for (let i = 1; i <= numb; i++) {
+            result *= i;
+        }
+        return result;
+    }
+</script>
+</body>
+</html>

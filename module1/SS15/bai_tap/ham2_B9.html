@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra ki tu co trong mang</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt("nhập độ dài của mảng");
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("nhập giá trị thứ " + i + " của mảng");
+    }
+    let character = prompt("nhập kí tự xét");
+    alert(check(arr, character));
+
+    function check(arr1, character1) {
+        let count = 0;
+        for (let i = 0; i < arr1.length; i++) {
+            if (character1 === arr1[i]) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            return count;
+        } else {
+            return "-1";
+        }
+    }
+</script>
+</body>
+</html>

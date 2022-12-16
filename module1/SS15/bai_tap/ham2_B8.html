@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dao mang so nguyen</title>
+</head>
+<body>
+<script>
+    let x = prompt("nhập vào đây độ dài mảng số nguyên bất kì . ")
+    let arr = [];
+    for (let i = 0; i < x; i++) {
+        arr[i] = prompt(" nhập giá trị thứ " + i + " vào đây : ")
+    }
+    alert(daoMangSoNguyen(arr));
+
+    function daoMangSoNguyen(arr) {
+        let first = 0;
+        let last = x - 1;
+        while (first < last) {
+            let temp = arr[first];
+            arr[first] = arr[last];
+            arr[last] = temp;
+            first++;
+            last--;
+        }
+        return arr;
+    }
+</script>
+</body>
+</html>

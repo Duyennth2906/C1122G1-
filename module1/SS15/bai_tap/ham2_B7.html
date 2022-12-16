@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dao vi tri 2 so nguyen bat ki</title>
+</head>
+<body>
+<script>
+    let numb1 = prompt("nhập vào đây số nguyên thứ nhất");
+    let numb2 = prompt("nhập vào đây số nguyên thứ hai");
+
+    function daoViTri2SoNguyen(numb1,numb2) {
+        let numb = numb1;
+        numb1 = numb2;
+        numb2 = numb;
+        return [numb1, numb2];
+    }
+
+    alert(daoViTri2SoNguyen(numb1,numb2));
+</script>
+</body>
+</html>
